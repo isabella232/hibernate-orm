@@ -24,6 +24,7 @@
 package org.hibernate.mapping;
 
 import java.io.Serializable;
+import java.sql.Types;
 
 import org.hibernate.HibernateException;
 import org.hibernate.MappingException;
@@ -314,6 +315,18 @@ public class Column implements Selectable, Serializable, Cloneable {
 	}
 
 	public String getDefaultValue() {
+		return defaultValue;
+	}
+
+	public String getDefaultValue(Dialect dialect, Mapping mapping) {
+		if (defaultValue != null)
+		{
+			int columnType = sqlTypeCode != null ? sqlTypeCode : getSqlTypeCode(mapping);
+			if (columnType == Types.BIT && (defaultValue.equalsIgnoreCase("true") || defaultValue.equalsIgnoreCase("false")))
+			{
+				return dialect.toBooleanValueString(Boolean.parseBoolean(defaultValue));
+			}
+		}
 		return defaultValue;
 	}
 
