@@ -317,7 +317,7 @@ public class Table implements RelationalModel, Serializable {
 						.append( ' ' )
 						.append( column.getSqlType( dialect, p ) );
 
-				String defaultValue = column.getDefaultValue();
+				String defaultValue = column.getDefaultValue( dialect, p );
 				if ( defaultValue != null ) {
 					alter.append( " default " ).append( defaultValue );
 				}
@@ -417,7 +417,7 @@ public class Table implements RelationalModel, Serializable {
 
 				buf.append( col.getSqlType( dialect, p ) );
 
-				String defaultValue = col.getDefaultValue();
+				String defaultValue = col.getDefaultValue( dialect, p );
 				if ( defaultValue != null ) {
 					buf.append( " default " ).append( defaultValue );
 				}
