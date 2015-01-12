@@ -17,6 +17,20 @@
     <name>Hibernate Core Aggregator</name>
     <description>Aggregator of the Hibernate Core modules.</description>
 
+    <licenses>
+        <license>
+            <name>LGPL 2.1 License</name>
+            <url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/atlassian/hibernate-orm.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/atlassian/hibernate-orm.git</developerConnection>
+        <url>https://github.com/atlassian/hibernate-orm</url>
+    </scm>
+
     <properties>
         <!-- Skip artifact deployment -->
         <maven.deploy.skip>true</maven.deploy.skip>
@@ -70,6 +84,17 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>atlassian-3rdparty</id>
+            <url>https://maven.atlassian.com/3rdparty</url>
+        </repository>
+        <snapshotRepository>
+            <id>atlassian-3rdparty-snapshot</id>
+            <url>https://maven.atlassian.com/3rdparty-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <profiles>       
         <profile>
