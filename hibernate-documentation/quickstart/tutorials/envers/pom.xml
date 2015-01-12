@@ -29,7 +29,7 @@
     <parent>
         <artifactId>hibernate-tutorials</artifactId>
         <groupId>org.hibernate.tutorials</groupId>
-        <version>3.6.10.Final-atlassian-1-SNAPSHOT</version>
+        <version>3.6.10.Final-atlassian-3-SNAPSHOT</version>
     </parent>
 
     <artifactId>hibernate-tutorial-envers</artifactId>
