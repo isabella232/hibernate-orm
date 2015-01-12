@@ -29,7 +29,7 @@
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-parent</artifactId>
     <packaging>pom</packaging>
-    <version>3.6.10.Final-atlassian-1-SNAPSHOT</version>
+    <version>3.6.10.Final-atlassian-2</version>
 
     <name>Hibernate Core Parent POM</name>
     <description>The base POM for all Hibernate Core modules.</description>
@@ -594,8 +594,8 @@
                 <jdbc.driver>org.hsqldb.jdbcDriver</jdbc.driver>
                 <jdbc.url>jdbc:hsqldb:.</jdbc.url>
                 <jdbc.user>sa</jdbc.user>
-                <jdbc.pass/>
-                <jdbc.isolation/>
+                <jdbc.pass />
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -616,8 +616,8 @@
                 <jdbc.driver>org.h2.Driver</jdbc.driver>
                 <jdbc.url>jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE</jdbc.url>
                 <jdbc.user>sa</jdbc.user>
-                <jdbc.pass/>
-                <jdbc.isolation/>
+                <jdbc.pass />
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -637,8 +637,8 @@
                 <jdbc.driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc.driver>
                 <jdbc.url>jdbc:derby:${project.build.outputDirectory}/test/derby;create=true</jdbc.url>
                 <jdbc.user>sa</jdbc.user>
-                <jdbc.pass/>
-                <jdbc.isolation/>
+                <jdbc.pass />
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -667,7 +667,7 @@
                 <jdbc.url>jdbc:mysql://vmg08.mw.lab.eng.bos.redhat.com/hibbr35</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -688,7 +688,7 @@
                 <jdbc.url>jdbc:mysql://vmg02.mw.lab.eng.bos.redhat.com/hibbr35</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -710,7 +710,7 @@
                 </jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -731,7 +731,7 @@
                 <jdbc.url>jdbc:postgresql://vmg01.mw.lab.eng.bos.redhat.com:5432:hibbr35</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -752,7 +752,7 @@
                 <jdbc.url>jdbc:postgresql://vmg03.mw.lab.eng.bos.redhat.com:5432:hibbr35</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -785,7 +785,7 @@
                 <jdbc.url>jdbc:db2://dev32.qa.atl.jboss.com:50000/jbossqa</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -812,7 +812,7 @@
                 <jdbc.url>jdbc:db2://dev67.qa.atl.jboss.com:50000/jbossqa</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -839,7 +839,7 @@
                 <jdbc.url>jdbc:db2://vmg06.mw.lab.eng.bos.redhat.com:50000/jbossqa</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -861,7 +861,7 @@
                 <jdbc.url>jdbc:oracle:thin:@dev20.qa.atl.jboss.com:1521:qa</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -883,7 +883,7 @@
                 <jdbc.url>jdbc:oracle:thin:@vmg05.mw.lab.eng.bos.redhat.com:1521:qaora10</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -904,7 +904,7 @@
                 <jdbc.url>jdbc:oracle:thin:@dev04.qa.atl2.redhat.com:1521:qaora11</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -927,7 +927,7 @@
                 </jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
 
@@ -948,7 +948,7 @@
                 <jdbc.url>jdbc:sybase:Tds:vmg07.mw.lab.eng.bos.redhat.com:5000/hibbr35?SQLINITSTRING=set quoted_identifier on&amp;DYNAMIC_PREPARE=true</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
         <profile>
@@ -967,7 +967,7 @@
                 <jdbc.url>jdbc:sybase:Tds:vmg07.mw.lab.eng.bos.redhat.com:5000/hibbr35?SQLINITSTRING=set quoted_identifier on</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
         <profile>
@@ -986,7 +986,7 @@
                 <jdbc.url>jdbc:sybase:Tds:vmg09.mw.lab.eng.bos.redhat.com:5000/hibbr35?SQLINITSTRING=set quoted_identifier on&amp;DYNAMIC_PREPARE=true</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
         <profile>
@@ -1005,7 +1005,7 @@
                 <jdbc.url>jdbc:sybase:Tds:vmg09.mw.lab.eng.bos.redhat.com:5000/hibbr35?SQLINITSTRING=set quoted_identifier on</jdbc.url>
                 <jdbc.user>hibbr35</jdbc.user>
                 <jdbc.pass>hibbr35</jdbc.pass>
-                <jdbc.isolation/>
+                <jdbc.isolation />
             </properties>
         </profile>
         <!-- The SQLServer2005 (MS JDBC) test envionment -->

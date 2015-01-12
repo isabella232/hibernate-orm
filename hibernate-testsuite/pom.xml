@@ -29,7 +29,7 @@
     <parent>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-parent</artifactId>
-        <version>3.6.10.Final-atlassian-1-SNAPSHOT</version>
+        <version>3.6.10.Final-atlassian-2</version>
         <relativePath>../hibernate-parent/pom.xml</relativePath>
     </parent>
     
@@ -43,7 +43,7 @@
     <properties>
         <!-- Skip artifact deployment -->
         <maven.deploy.skip>true</maven.deploy.skip>
-        <surefire.jvm.parameter></surefire.jvm.parameter>
+        <surefire.jvm.parameter />
     </properties>
 
     <dependencies>
