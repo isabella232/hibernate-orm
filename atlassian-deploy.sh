@@ -1,6 +1,6 @@
 #! /bin/sh
 
-TAG=3.6.10.Final-atlassian-4
+TAG=3.6.10.Final-atlassian-5
 JAR_PATTERN="*${TAG}.jar"
 
 # mvn clean source:jar package -DskipTests -Djdk16_home=$JAVA_HOME -DdisableDistribution=true
